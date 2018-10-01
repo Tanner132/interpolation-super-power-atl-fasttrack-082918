@@ -1,8 +1,10 @@
 # Write your #display_rainbow method here
 #display_rainbow(Array)
-color_letter = ["R:","O","Y","G","B","I","V"]
-def display_rainbow(colors)
+color_letter = ["R:","O:","Y:","G:","B:","I:","V:"]
+def display_rainbow(colors, color_letter)
   colors.each do |color|
-    puts "#{color}"
-  end
+    color_letter do |letter|
+      puts "#{letter}" + " " + "#{color}"
+    end
+  end 
 end 
